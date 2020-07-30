@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/tema1/assets/css/app.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
 
     <title>Theme Template</title>
   </head>
@@ -21,57 +21,331 @@
             <!-- Navbar content -->
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <div class="container">
-                    <a class="navbar-brand" href="#">Logo Page</a>
+                    <a class="navbar-brand font-weight-bold" href="/index.html">Logo Page</a>
                     <!-- navbar items -->
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link font-weight-bold" href="/index.html"><i class='fas fa-home'></i> Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/tema1/templates/about.html">About</a>
+                            <a class="nav-link font-weight-bold" href="/templates/about.html"><i class='fas fa-exclamation-circle'></i> About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/tema1/templates/page.html">Blog</a>
+                            <a class="nav-link font-weight-bold" href="/templates/page.html"><i class='far fa-copy'></i> Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/tema1/templates/contact.html">ContactUs</a>
+                            <a class="nav-link font-weight-bold" href="/templates/contact.html"><i class='far fa-envelope'></i> ContactUs</a>
                         </li>
                     </ul>
                 </div>
-                
-                <!-- <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form> -->
             </div>
         </nav>
     </header>
     <!-- Content -->
     <div class="container-fluid">
-        <div class="row">
+        <div class="container">
             <!-- Page Header -->
             <header>
-                <div class="col-lg-12 bg-dark">
-                    <h1 class="my-4 text-center text-primary">Titulo de Pagina</h1>
+                <div class="col-lg-12 bg-dark p-2">
+                    <h1 class="my-4 text-center text-white font-weight-bold">Blog</h1>
                 </div>
             </header>
+            <hr>
+            <div class="row">
+               <!-- Post section -->
+               <div class="col-lg-9">
+                   <!-- post entry -->
+                    <div class="card card-body font-weight-bold mb-2">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="/templates/single.html">
+                                    <h2 class="text-center my-4">Nueva Entrada</h2>
+                                </a>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a href="/index.html"><i class='fas fa-home'></i> Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            <a href="templates/archive.html"><i class="fas fa-sitemap"></i> Library</a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">
+                                            <p><i class="fas fa-tags"></i> Data</p>
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="container-fluid">
+                                    <img src="http://lorempixel.com/1200/300/sports/" alt="imagen" class="img-fluid mb-3">
+                                </div>
+                                <div class="container-fluid">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi fuga eaque ratione blanditiis magni error omnis aut impedit laboriosam illo minus nulla, vitae numquam neque sapiente, enim molestiae optio dolore officiis, ipsum quibusdam rerum?</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="/templates/single.html" class="btn btn-primary">Ver Mas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- post entry -->
+                    <div class="card card-body font-weight-bold mb-2">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="/templates/single.html">
+                                    <h2 class="text-center my-4">Nueva Entrada</h2>
+                                </a>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a href="/index.html"><i class='fas fa-home'></i> Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            <a href="templates/archive.html"><i class="fas fa-sitemap"></i> Library</a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">
+                                            <p><i class="fas fa-tags"></i> Data</p>
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="container-fluid">
+                                    <img src="http://lorempixel.com/1200/300/sports/" alt="imagen" class="img-fluid mb-3">
+                                </div>
+                                <div class="container-fluid">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi fuga eaque ratione blanditiis magni error omnis aut impedit laboriosam illo minus nulla, vitae numquam neque sapiente, enim molestiae optio dolore officiis, ipsum quibusdam rerum?</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="/templates/single.html" class="btn btn-primary">Ver Mas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- post entry -->
+                    <div class="card card-body font-weight-bold mb-2">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <a href="/templates/single.html">
+                                    <h2 class="text-center my-4">Nueva Entrada</h2>
+                                </a>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item">
+                                            <a href="/index.html"><i class='fas fa-home'></i> Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item">
+                                            <a href="templates/archive.html"><i class="fas fa-sitemap"></i> Library</a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">
+                                            <p><i class="fas fa-tags"></i> Data</p>
+                                        </li>
+                                    </ol>
+                                </nav>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="container-fluid">
+                                    <img src="http://lorempixel.com/1200/300/sports/" alt="imagen" class="img-fluid mb-3">
+                                </div>
+                                <div class="container-fluid">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi fuga eaque ratione blanditiis magni error omnis aut impedit laboriosam illo minus nulla, vitae numquam neque sapiente, enim molestiae optio dolore officiis, ipsum quibusdam rerum?</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <a href="/templates/single.html" class="btn btn-primary">Ver Mas</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- pagination -->
+                    <div class="car-body">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true"><i class="fas fa-angle-double-left"></i></span>
+                                </a>
+                              </li>
+                              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true"><i class="fas fa-angle-double-right"></i></span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div>
+               </div>
+               <!-- aside widgets -->
+               <div class="col-lg-3 card widgets-lateral">
+                   <!-- form search example -->
+                   <div class="card-body">
+                        <form role="search" method="get" id="searchform" class="searchform" action="http://theme.test/">
+                            <div>
+                                <label class="screen-reader-text" for="s">Buscar:</label>
+                                <input type="text" value="" name="s" id="s">
+                                <input type="submit" id="searchsubmit" value="Buscar">
+                            </div>
+                        </form>
+                        <!-- calendar widget -->
+                        <div class="card-body">
+                            <div class="calendar_wrap">
+                                <table id="wp-calendar" class="wp-calendar-table">
+                                    <caption>julio 2020</caption>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" title="lunes">L</th>
+                                            <th scope="col" title="martes">M</th>
+                                            <th scope="col" title="miércoles">X</th>
+                                            <th scope="col" title="jueves">J</th>
+                                            <th scope="col" title="viernes">V</th>
+                                            <th scope="col" title="sábado">S</th>
+                                            <th scope="col" title="domingo">D</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+                                        </tr>
+                                        <tr>
+                                            <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+                                        </tr>
+                                        <tr>
+                                            <td>27</td><td>28</td><td>29</td><td id="today"><a href="http://theme.test/2020/07/30/" aria-label="Entradas publicadas el 30 de July de 2020">30</a></td><td>31</td>
+                                            <td class="pad" colspan="2">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <nav aria-label="Meses anteriores y posteriores" class="wp-calendar-nav">
+                                    <span class="wp-calendar-nav-prev">&nbsp;</span>
+                                    <span class="pad">&nbsp;</span>
+                                    <span class="wp-calendar-nav-next">&nbsp;</span>
+                                </nav>
+                            </div>
+                        </div>
+
+                        <!-- widget  -->
+                        <div class="card-body">
+                            <h4>Meta</h4>
+                            <hr>			
+                            <ul>
+                                <li><a href="http://theme.test/wp-admin/">Administrador del sitio</a></li>			
+                                <li><a href="http://theme.test/wp-login.php?action=logout&amp;_wpnonce=05edcd4fad">Salir</a></li>
+                                <li><a href="http://theme.test/feed/">Feed de entradas</a></li>
+                                <li><a href="http://theme.test/comments/feed/">Feed de comentarios</a></li>
+                                <li><a href="https://es.wordpress.org/">WordPress.org</a></li>			
+                            </ul>
+                        </div>
+                    </div>
+               </div>
+            </div>
         </div>
     </div>
     <!-- Footer -->
-    <footer class="container-fluid text-center text-white bg-dark">
-        <div class="col-lg-12 bg-secondary">
-            los wigets
+
+    <div class="container-fluid bg-secondary font-weight-bold text-white d-flex">
+        <!-- widgets footer configuration -->
+        <div class="col-lg-4 widgets">
+            <div class="card-body">
+                <div class="calendar_wrap">
+                    <table id="wp-calendar" class="wp-calendar-table">
+                        <caption>julio 2020</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col" title="lunes">L</th>
+                                <th scope="col" title="martes">M</th>
+                                <th scope="col" title="miércoles">X</th>
+                                <th scope="col" title="jueves">J</th>
+                                <th scope="col" title="viernes">V</th>
+                                <th scope="col" title="sábado">S</th>
+                                <th scope="col" title="domingo">D</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+                            </tr>
+                            <tr>
+                                <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+                            </tr>
+                            <tr>
+                                <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+                            </tr>
+                            <tr>
+                                <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+                            </tr>
+                            <tr>
+                                <td>27</td><td>28</td><td>29</td><td id="today"><a href="http://theme.test/2020/07/30/" aria-label="Entradas publicadas el 30 de July de 2020">30</a></td><td>31</td>
+                                <td class="pad" colspan="2">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <nav aria-label="Meses anteriores y posteriores" class="wp-calendar-nav">
+                        <span class="wp-calendar-nav-prev">&nbsp;</span>
+                        <span class="pad">&nbsp;</span>
+                        <span class="wp-calendar-nav-next">&nbsp;</span>
+                    </nav>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-12">
-            <h5>CopyRight</h5>
+        <div class="col-lg-4 widgets">
+            <div class="card-body">
+                <h4>Meta</h4>
+                <hr>			
+                <ul>
+                    <li><a href="http://theme.test/wp-admin/">Administrador del sitio</a></li>			
+                    <li><a href="http://theme.test/wp-login.php?action=logout&amp;_wpnonce=05edcd4fad">Salir</a></li>
+                    <li><a href="http://theme.test/feed/">Feed de entradas</a></li>
+                    <li><a href="http://theme.test/comments/feed/">Feed de comentarios</a></li>
+                    <li><a href="https://es.wordpress.org/">WordPress.org</a></li>			
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-4 widgets">
+            <div class="card-body">
+                <form role="search" method="get" id="searchform" class="searchform" action="http://theme.test/">
+                    <div>
+                        <label class="screen-reader-text" for="s">Buscar:</label>
+                        <input type="text" value="" name="s" id="s">
+                        <input type="submit" id="searchsubmit" value="Buscar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="container-fluid text-center text-white bg-dark font-weight-bold">
+        <div class="col-lg-12 p-3">
+            <h5 class="font-weight-bold">CopyRight</h5>
         </div>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="/tema1/assets/js/font.js"></script>
+    <script src="/assets/js/font.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="/tema1/assets/js/app.js"></script>
+    <script src="/assets/js/app.js"></script>
   </body>
 </html>

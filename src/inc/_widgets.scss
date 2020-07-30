@@ -1,0 +1,167 @@
+/* calendar widget */
+.widget_calendar {float: left;}
+#wp-calendar {width: 100%; }
+#wp-calendar caption { text-align: right; color: #333; font-size: 12px; margin-top: 10px; margin-bottom: 15px; }
+#wp-calendar thead { font-size: 10px; }
+#wp-calendar thead th { padding-bottom: 10px; }
+#wp-calendar tbody { color: #fff; }
+#wp-calendar tbody td { background: #7d868a; border: 1px solid #565d61; text-align: center; padding:8px;}
+#wp-calendar tbody td:hover { background: #7d868a; }
+#wp-calendar tbody .pad { background: none; }
+#wp-calendar tfoot #next { font-size: 10px; text-transform: uppercase; text-align: right; }
+#wp-calendar tfoot #prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }
+
+
+/* search widgets custom */
+.widgets {
+    div {
+        font-weight: 900;
+        h4 { text-align: center; }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-left: 10px;
+            li {
+                a {
+                    color: white;
+                }
+            }
+            li::before { 
+                content: "\2022"; 
+                padding-right: 10px; 
+                color: rgb(46, 45, 45);
+            }
+        }
+        form {
+            div {
+                font-family: FontAwesome;
+                display: flex;
+                label { display:none; }
+                input[type="text"] {
+                    margin: 0;
+                    font-family: inherit;
+                    font-size: inherit;
+                    line-height: inherit;
+                    display: block;
+                    width: 60%;
+                    height: calc(1.5em + 0.75rem + 2px);
+                    padding: 0.375rem 0.75rem;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    color: #495057;
+                    background-color: #fff;
+                    background-clip: padding-box;
+                    border: 1px solid #ced4da;
+                    border-radius: 0.25rem;
+                    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                    margin-left: 1rem;
+                }
+
+                input[type="submit"] {
+                    display: inline-block;
+                    font-weight: 400;
+                    color: #212529;
+                    text-align: center;
+                    vertical-align: middle;
+                    -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                            user-select: none;
+                    background-color: transparent;
+                    border: 1px solid transparent;
+                    padding: 0.375rem 0.75rem;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    border-radius: 0.25rem;
+                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                    color: #fff;
+                    background-color: #007bff;
+                    border-color: #007bff;
+                    margin-left: .3em;
+                    &:hover {
+                        color: #212529;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.widgets-lateral {
+    #wp-calendar {width: 50%; }
+    div {
+        font-weight: 900;
+        h4 { text-align: center; }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-left: 10px;
+            li {
+                a {
+                    color: black;
+                }
+            }
+            li::before { 
+                content: "\2022"; 
+                padding-right: 10px; 
+                color: rgb(46, 45, 45);
+            }
+        }
+        form {
+            div {
+                display: flex;
+                label { display:none; }
+                input[type="text"] {
+                    margin: 0;
+                    font-family: inherit;
+                    font-size: inherit;
+                    line-height: inherit;
+                    display: block;
+                    width: 70%;
+                    height: calc(1.5em + 0.75rem + 2px);
+                    padding: 0.375rem 0.75rem;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    color: #495057;
+                    background-color: #fff;
+                    background-clip: padding-box;
+                    border: 1px solid #ced4da;
+                    border-radius: 0.25rem;
+                    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                    margin-left: 1rem;
+                }
+
+                input[type="submit"] {
+                    display: inline-block;
+                    font-weight: 400;
+                    color: #212529;
+                    text-align: center;
+                    vertical-align: middle;
+                    -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                            user-select: none;
+                    background-color: transparent;
+                    border: 1px solid transparent;
+                    padding: 0.375rem 0.75rem;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    border-radius: 0.25rem;
+                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                    color: #fff;
+                    background-color: #007bff;
+                    border-color: #007bff;
+                    margin-left: .3em;
+                    float: left;
+                    &:hover {
+                        color: #212529;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
