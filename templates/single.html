@@ -11,6 +11,9 @@
     <title>Theme Template</title>
   </head>
   <body>
+    <!-- addons -->
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
     <!-- Header -->
     <header>
         <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
@@ -98,33 +101,76 @@
                             </div>
                         </div>
                     </div>
+                    <h3 class="text-center my-3">Recent Comments</h3>
+                    <hr>
+                    <!-- comments section -->
+                    <div class="card car-body">
+                        <div class="row">
+                            <div class="col-lg-12 p-5">
+                                <p>
+                                    <button class="btn btn-block btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                       <i class="far fa-comments"></i> Be the first to comment
+                                    </button>
+                                </p>
+                                <div class="collapse" id="collapseExample">
+                                    <div class="card card-body">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <h3>Deja tu comentario</h3>
+                                                Tu dirección de correo electrónico no será publicada. Los campos obligatorios están marcados con *
+                                            </div>
+                                            <div class="col-lg-12 mt-3">
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlTextarea1">Comment</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                                </div>
 
-                    <!-- pagination -->
-                    <div class="car-body">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination">
-                              <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                  <span aria-hidden="true"><i class="fas fa-angle-double-left"></i></span>
-                                </a>
-                              </li>
-                              <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                              <li class="page-item"><a class="page-link" href="#">2</a></li>
-                              <li class="page-item"><a class="page-link" href="#">3</a></li>
-                              <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                  <span aria-hidden="true"><i class="fas fa-angle-double-right"></i></span>
-                                </a>
-                              </li>
-                            </ul>
-                          </nav>
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlInput1">Name *</label>
+                                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="example">
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlInput1">Email address *</label>
+                                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                                </div>
+
+                                                <div class="form-group form-check">
+                                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                    <label class="form-check-label" for="exampleCheck1">Acept Terms and Conditions!</label>
+                                                </div>
+                                                <button type="button" class="btn btn-block btn-primary"><i class="far fa-comment"></i> Send Comment!</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 p-5">
+                                <div class="media">
+                                    <img src="http://lorempixel.com/g/64/64/people/" class="rounded-circle" alt="http://lorempixel.com/g/180/180/people/">
+                                    <div class="media-body">
+                                      <h5 class="mt-0">Media heading</h5>
+                                      Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                  
+                                      <div class="media mt-3">
+                                        <a class="mr-3" href="#">
+                                          <img src="http://lorempixel.com/g/64/64/people/" class="rounded-circle" alt="http://lorempixel.com/g/180/180/people/">
+                                        </a>
+                                        <div class="media-body">
+                                          <h5 class="mt-0">Media heading</h5>
+                                          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                </div>
             </div>
         </div>
     </div>
     <!-- Footer -->
-
     <div class="container-fluid bg-secondary font-weight-bold text-white d-flex">
         <!-- widgets footer configuration -->
         <div class="col-lg-4 widgets">
@@ -185,7 +231,7 @@
         </div>
         <div class="col-lg-4 widgets">
             <div class="card-body">
-                <form role="search" method="get" id="searchform" class="searchform" action="http://theme.test/">
+                <form role="search" method="get" id="searchform" class="searchform" action="/templates/search.html">
                     <div>
                         <label class="screen-reader-text" for="s">Buscar:</label>
                         <input type="text" value="" name="s" id="s">
