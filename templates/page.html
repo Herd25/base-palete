@@ -31,8 +31,34 @@
   </head>
   <body>
     <!-- addons -->
+    <div class="loader d-flex">
+        <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-info" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
     <div id="progressbar"></div>
     <div id="scrollpath"></div>
+    <div class="scrolltop float-right">
+        <i class="fas fa-angle-up bg-secondary" id="btnup"></i>
+    </div>
     <!-- Header -->
     <header>
         <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
@@ -45,8 +71,8 @@
                 <div class="container">
                     <a class="navbar-brand font-weight-bold" href="/index.html">Logo Page</a>
                     <!-- navbar items -->
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0" id="navbarGroup">
+                        <li class="nav-item">
                             <a class="nav-link font-weight-bold" href="/index.html"><i class='fas fa-home'></i> Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -64,11 +90,11 @@
         </nav>
     </header>
     <!-- Content -->
-    <div class="container-fluid">
-        <div class="container">
+    <div class="container-fluid" id="MediaPage">
+        <div class="container" id="MediaContainer">
             <!-- Page Header -->
             <header>
-                <div class="col-lg-12 bg-dark p-2">
+                <div class="col-lg-12 col-sm-12 col-md-12 bg-dark p-2">
                     <h1 class="my-4 text-center text-white font-weight-bold">Blog</h1>
                 </div>
             </header>
@@ -215,7 +241,7 @@
                     </div>
                </div>
                <!-- aside widgets -->
-               <div class="col-lg-3 card widgets-lateral">
+               <div class="col-lg-3 card widgets-lateral mobile">
                    <!-- form search example -->
                    <div class="card-body">
                         <form role="search" method="get" id="searchform" class="searchform" action="http://theme.test/">
@@ -225,48 +251,6 @@
                                 <input type="submit" id="searchsubmit" value="Buscar">
                             </div>
                         </form>
-                        <!-- calendar widget -->
-                        <div class="card-body">
-                            <div class="calendar_wrap">
-                                <table id="wp-calendar" class="wp-calendar-table">
-                                    <caption>julio 2020</caption>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col" title="lunes">L</th>
-                                            <th scope="col" title="martes">M</th>
-                                            <th scope="col" title="miércoles">X</th>
-                                            <th scope="col" title="jueves">J</th>
-                                            <th scope="col" title="viernes">V</th>
-                                            <th scope="col" title="sábado">S</th>
-                                            <th scope="col" title="domingo">D</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td colspan="2" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
-                                        </tr>
-                                        <tr>
-                                            <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
-                                        </tr>
-                                        <tr>
-                                            <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
-                                        </tr>
-                                        <tr>
-                                            <td>27</td><td>28</td><td>29</td><td id="today"><a href="http://theme.test/2020/07/30/" aria-label="Entradas publicadas el 30 de July de 2020">30</a></td><td>31</td>
-                                            <td class="pad" colspan="2">&nbsp;</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <nav aria-label="Meses anteriores y posteriores" class="wp-calendar-nav">
-                                    <span class="wp-calendar-nav-prev">&nbsp;</span>
-                                    <span class="pad">&nbsp;</span>
-                                    <span class="wp-calendar-nav-next">&nbsp;</span>
-                                </nav>
-                            </div>
-                        </div>
 
                         <!-- widget  -->
                         <div class="card-body">
@@ -286,7 +270,7 @@
         </div>
     </div>
     <!-- Footer -->
-    <div class="container-fluid bg-secondary font-weight-bold text-white d-flex">
+    <div class="container-fluid container-sm bg-secondary font-weight-bold text-white d-flex flex-wrap">
         <!-- widgets footer configuration -->
         <div class="col-lg-4 widgets">
             <div class="card-body">

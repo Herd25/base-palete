@@ -1,1 +1,21 @@
 $breadcrumb-divider: quote(">");
+
+// btn scrool up
+#btnup
+{
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 40px;
+    z-index: 999;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 900;
+    &:hover 
+    {
+        background-color: rgb(201, 197, 197);
+        cursor: pointer;
+    }
+}

@@ -5,15 +5,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- favivons -->
+    <link  rel = "apple-touch-icon"  tallas = "57x57"  href = "/assets/images/favicon/apple-icon-57x57.png" > 
+    <link  rel = "apple-touch-icon"  tallas = "60x60"  href = "/assets/images/favicon/apple -icon-60x60.png " > 
+    <link  rel = " apple-touch-icon "  tamaños = " 72x72 "  href = "/assets/images/favicon/apple-icon-72x72.png " > 
+    <link  rel = " apple-touch-icon "  tamaños = "76x76"  href = "/assets/images/favicon/apple-icon-76x76.png" > 
+    <link  rel = "apple-touch-icon "  tamaños = " 114x114 "  href = " /assets/images/favicon/apple-icon-114x114.png "> 
+    <link  rel = "apple-touch-icon"  tallas = "120x120"  href = "/assets/images/favicon/apple-icon-120x120.png" > 
+    <link  rel = "apple-touch-icon"  tallas = "144x144"  href = "/assets/images/favicon/apple-icon-144x144.png " > 
+    <link  rel = " apple-touch-icon "  tamaños = " 152x152 "  href = " /assets/images/favicon/apple-icon-152x152.png " > 
+    <link  rel = " apple-touch-icon "  tamaños = "180x180"  href = "/assets/images/favicon/apple-icon-180x180.png" > 
+    <link  rel = "icon"  type = "image/png"  tamaños = "192x192"  href = "/assets/images/favicon/android-icon-192x192.png" > 
+    <link  rel = "icon"  type = "image/png"  tamaños = "32x32"  href = "/assets/images/favicon/favicon-32x32.png" > 
+    <link  rel = "icon"  type = "image/png"  tallas = "96x96"  href = "/assets/images/favicon/favicon-96x96.png" > 
+    <link  rel = "icon"  type = "image/png"  tallas = "16x16"  href = "/assets/images/favicon/favicon-16x16. png " > 
+    <link  rel = " manifest " href = "/manifest.json" > 
+    <meta  name ="msapplication-TileColor"  content = "#ffffff" > 
+    <meta  name = "msapplication-TileImage"  content = "/assets/images/favicon/ms-icon-144x144.png" > 
+    <meta  name = "theme-color"  content = "#ffffff" >
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/assets/css/app.css">
 
-    <title>Theme Template</title>
+    <title>Palete Theme</title>
   </head>
-  <body>
+  <body class="clearfix overflow-auto">
     <!-- addons -->
+    <div class="loader d-flex">
+        <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-info" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
     <div id="progressbar"></div>
     <div id="scrollpath"></div>
+    <div class="scrolltop float-right">
+        <i class="fas fa-angle-up bg-secondary" id="btnup"></i>
+    </div>
     <!-- Header -->
     <header>
         <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
@@ -26,8 +71,8 @@
                 <div class="container">
                     <a class="navbar-brand font-weight-bold" href="/index.html">Logo Page</a>
                     <!-- navbar items -->
-                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0" id="navbarGroup">
+                        <li class="nav-item">
                             <a class="nav-link font-weight-bold" href="/index.html"><i class='fas fa-home'></i> Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -45,11 +90,11 @@
         </nav>
     </header>
     <!-- Content -->
-    <div class="container-fluid">
-        <div class="container">
+    <div class="container-fluid" id="MediaPage">
+        <div class="container" id="MediaContainer">
             <!-- Page Header -->
             <header>
-                <div class="col-lg-12 bg-dark p-2">
+                <div class="col-lg-12 col-sm-12 bg-dark p-2">
                     <h1 class="my-4 text-center text-white font-weight-bold">Inicio</h1>
                 </div>
             </header>
@@ -355,9 +400,9 @@
         </div>
     </div>
     <!-- Footer -->
-    <div class="container-fluid bg-secondary font-weight-bold text-white d-flex">
+    <div class="container-fluid container-sm bg-secondary font-weight-bold text-white d-flex flex-wrap">
         <!-- widgets footer configuration -->
-        <div class="col-lg-4 widgets">
+        <div class="col-lg-4 widgets flex-grow-1">
             <div class="card-body">
                 <div class="calendar_wrap">
                     <table id="wp-calendar" class="wp-calendar-table">
@@ -400,7 +445,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 widgets">
+        <div class="col-lg-4 widgets flex-grow-1">
             <div class="card-body">
                 <h4>Meta</h4>
                 <hr>			
@@ -413,7 +458,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-lg-4 widgets">
+        <div class="col-lg-4 widgets flex-grow-1">
             <div class="card-body">
                 <form role="search" method="get" id="searchform" class="searchform" action="/templates/search.html">
                     <div>
