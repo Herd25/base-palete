@@ -51,14 +51,14 @@ addEventListener('load', change);
 
 // navbar action
 //let locationpage = location.href;
-let link = document.querySelectorAll('#item-link a');
-let icons = document.querySelectorAll('#item-link a i');
+let link = document.querySelectorAll('.page_item a');
+let icons = document.querySelectorAll('.page_item a i');
 
 // validation current location
 
 for (let index = 0; index < link.length; index++) {
     const element = link[index];
-    
+    console.log(element.innerText)
     if ( element.innerText == "Home" || element.innerText == "Inicio" )
     {
         icons[3].classList += " fa-home";
