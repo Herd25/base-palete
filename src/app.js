@@ -58,30 +58,41 @@ let icons = document.querySelectorAll('.page_item a i');
 
 for (let index = 0; index < link.length; index++) {
     const element = link[index];
-    console.log(element.innerText)
+    
     if ( element.innerText == "Home" || element.innerText == "Inicio" )
     {
         icons[3].classList += " fa-home";
-        console.log("yes is home text");
+        
     }
     else if ( element.innerText == "About us" || element.innerText == "Acerca de" )
     {
         icons[0].classList += " fa-exclamation-circle";
-        console.log("yes is about text");
+        
     }
     else if ( element.innerText == "Contact" || element.innerText == "Contacto" )
     {
         icons[2].classList += " fa-envelope";
-        console.log("yes is contact text");
+        
     }
     else if ( element.innerText == "blog" || element.innerText == "Blog" )
     {
         icons[1].classList += " fa-copy";
-        console.log("yes is blog text");
     }
     else
     {
-        console.log("none");
+        for (let index = 0; index < icons.length; index++) {
+            const item = icons[index];
+            if ( item.classList.contains("fa-copy") || item.classList.contains("fa-envelope") 
+            || item.classList.contains("fa-exclamation-circle") || item.classList.contains("fa-home") )
+            {
+                // pass...
+            } 
+            else 
+            {
+                item.classList += " fa-file";
+            }
+            //console.log(item)
+        }
     }
 }
 
