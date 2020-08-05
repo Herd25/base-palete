@@ -51,5 +51,3 @@ const results = new Search(searchinput, {
         `
     }
 });
-
-console.log(results);

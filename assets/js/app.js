@@ -1,1 +1,62 @@
-!function(e){var n={};function t(o){if(n[o])return n[o].exports;var r=n[o]={i:o,l:!1,exports:{}};return e[o].call(r.exports,r,r.exports,t),r.l=!0,r.exports}t.m=e,t.c=n,t.d=function(e,n,o){t.o(e,n)||Object.defineProperty(e,n,{enumerable:!0,get:o})},t.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},t.t=function(e,n){if(1&n&&(e=t(e)),8&n)return e;if(4&n&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(t.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&n&&"string"!=typeof e)for(var r in e)t.d(o,r,function(n){return e[n]}.bind(null,r));return o},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)},t.p="/",t(t.s=0)}([function(e,n,t){t(1),e.exports=t(2)},function(e,n){var t=document.getElementById("progressbar"),o=document.body.scrollHeight-window.innerHeight,r=document.getElementById("btnup");window.onscroll=function(){var e=window.pageYOffset/o*100;t.style.height=e+"%",document.body.scrollTop>90||document.documentElement.scrollTop>90?(r.style.display="block",r.onclick=function(){document.body.scrollTop=0,document.documentElement.scrollTop=0}):r.style.display="none"};var l=document.getElementById("MediaContainer"),c=document.getElementById("MediaPage"),i=function(){innerWidth<730?(l.classList.remove("container"),c.classList.remove("container-fluid")):(l.classList.add("container"),c.classList.add("container-fluid"))},d=document.querySelector(".loader");addEventListener("resize",i),addEventListener("DOMContentLoaded",i),addEventListener("load",(function(){d.className+=" hidden"}));var u,a=location.href,s=document.querySelectorAll("a"),f=document.querySelectorAll(".nav-item");for(console.log(f);u<a;u++)s[u].href===a&&console.log("yes")},function(e,n){}]);
+"use strict";
+
+/**
+ * function animate scrollpath
+ */
+var progress = document.getElementById("progressbar");
+var totalpath = document.body.scrollHeight - window.innerHeight; // up botton
+
+var btnscroll = document.getElementById("btnup");
+
+window.onscroll = function () {
+  var progressHeigth = window.pageYOffset / totalpath * 100;
+  progress.style.height = progressHeigth + "%";
+
+  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+    btnscroll.style.display = "block";
+
+    btnscroll.onclick = function () {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    };
+  } else {
+    btnscroll.style.display = "none";
+  }
+}; // resize token
+
+
+var pagecontent = document.getElementById("MediaContainer");
+var page = document.getElementById('MediaPage');
+
+var resize = function resize() {
+  if (innerWidth < 730) {
+    pagecontent.classList.remove("container");
+    page.classList.remove("container-fluid");
+  } else {
+    pagecontent.classList.add("container");
+    page.classList.add("container-fluid");
+  }
+}; // loader token
+
+
+var loader = document.querySelector(".loader");
+
+var change = function change() {
+  loader.className += " hidden";
+};
+
+addEventListener('resize', resize);
+addEventListener('DOMContentLoaded', resize);
+addEventListener('load', change); // navbar action
+
+var locationpage = location.href;
+var link = document.querySelectorAll('a');
+var navgroup = document.querySelectorAll(".nav-item"); //console.log(navgroup);
+
+console.log(navgroup); // validation current location
+
+for (var i; i < locationpage; i++) {
+  if (link[i].href === locationpage) {
+    console.log('yes');
+  }
+}
