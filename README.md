@@ -13,7 +13,6 @@
 * [x] Dynamic content loading bar with light effects.
 * [x] v-1 style customizable wigets. :sunglasses:
 * [x] Animated page loader before displaying main content. :smiley:
-* [x] Automatic Search result wigets not plugin. :smiley:
 
 #### Screenshots!
 ---
