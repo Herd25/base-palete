@@ -50,17 +50,38 @@ addEventListener('load', change);
 
 
 // navbar action
-let locationpage = location.href;
-let link = document.querySelectorAll('a');
-let navgroup = document.querySelectorAll(".nav-item");
+//let locationpage = location.href;
+let link = document.querySelectorAll('#item-link a');
+let icons = document.querySelectorAll('#item-link a i');
 
-//console.log(navgroup);
-console.log(navgroup);
 // validation current location
-for ( let i; i < locationpage; i++ ) 
-{
-    if ( link[i].href === locationpage ) 
+
+for (let index = 0; index < link.length; index++) {
+    const element = link[index];
+    
+    if ( element.innerText == "Home" || element.innerText == "Inicio" )
     {
-        console.log('yes')
+        icons[3].classList += " fa-home";
+        console.log("yes is home text");
+    }
+    else if ( element.innerText == "About us" || element.innerText == "Acerca de" )
+    {
+        icons[0].classList += " fa-exclamation-circle";
+        console.log("yes is about text");
+    }
+    else if ( element.innerText == "Contact" || element.innerText == "Contacto" )
+    {
+        icons[2].classList += " fa-envelope";
+        console.log("yes is contact text");
+    }
+    else if ( element.innerText == "blog" || element.innerText == "Blog" )
+    {
+        icons[1].classList += " fa-copy";
+        console.log("yes is blog text");
+    }
+    else
+    {
+        console.log("none");
     }
 }
+
