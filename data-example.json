@@ -1,0 +1,30 @@
+{
+    "time": "2020-04-08T05:17:17:00354",
+    "query" : "dom",
+    "results" : [
+        {
+            "title" : "New Entry",
+            "content" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi fuga eaque ratione blanditiis magni error omnis aut impedit laboriosam illo minus nulla, vitae numquam neque sapiente, enim molestiae optio dolore officiis, ipsum quibusdam rerum?",
+            "href" : "http://lorempixel.com/1200/300/sports/",
+            "urlpost" : "/templates/single.html"
+        },
+        {
+            "title" : "New Entry",
+            "content" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi fuga eaque ratione blanditiis magni error omnis aut impedit laboriosam illo minus nulla, vitae numquam neque sapiente, enim molestiae optio dolore officiis, ipsum quibusdam rerum?",
+            "href" : "http://lorempixel.com/1200/300/sports/",
+            "urlpost" : "/templates/single.html"
+        },
+        {
+            "title" : "New Entry",
+            "content" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi fuga eaque ratione blanditiis magni error omnis aut impedit laboriosam illo minus nulla, vitae numquam neque sapiente, enim molestiae optio dolore officiis, ipsum quibusdam rerum?",
+            "href" : "http://lorempixel.com/1200/300/sports/",
+            "urlpost" : "/templates/single.html"
+        },
+        {
+            "title" : "New Entry",
+            "content" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quasi fuga eaque ratione blanditiis magni error omnis aut impedit laboriosam illo minus nulla, vitae numquam neque sapiente, enim molestiae optio dolore officiis, ipsum quibusdam rerum?",
+            "href" : "http://lorempixel.com/1200/300/sports/",
+            "urlpost" : "/templates/single.html"
+        }
+    ] 
+}
