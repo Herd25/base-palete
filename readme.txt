@@ -1,16 +1,16 @@
 /*
-* Theme Name: ePalete
+* Theme Name: Palete-Theme for Wordpress
 * Theme URI: https://newless.ga/
-* Author: yo mero
+* Author: design&programing (alex leon)
 * Author URI: https://newless.ga/
-* Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+* Description: Responsive Design adaptable movil , desktop , laptop Simple integration for wordpress 4.5 Light and consumes few resources assets minimized to the maximum for greater load and depends on your blog and the content is recommended to use cache plugins Dynamic content loading bar with light effects.
 * Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
-* Version: 1.3
+* Version: 1.0
 * Requires at least: 5.0
 * Tested up to: 5.4
 * Requires PHP: 7.0
 * License: MIT License
 * License URI: https://opensource.org/licenses/MIT
-* Text Domain: ePalete
+* Text Domain: etema
 * This theme, like newless, is licensed under the MIT.
 */
